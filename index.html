@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ResumeAI — Premium Resume Builder</title>
-  <meta name="description" content="Build a stunning, ATS-optimized resume with our premium builder. Choose from 4 professional templates, fill in your details, and download a polished PDF — all for free, no sign-up required." />
+  <meta name="description"
+    content="Build a stunning, ATS-optimized resume with our premium builder. Choose from 4 professional templates, fill in your details, and download a polished PDF — all for free, no sign-up required." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ── NAVBAR ─────────────────────────────────────────── -->
@@ -17,7 +22,7 @@
       ResumeAI
       <span class="nav-pro">PRO</span>
     </div>
-    <span class="nav-hint">100% Client-Side · No API Needed</span>
+    <span class="nav-hint"></span>
   </nav>
 
   <!-- ── HERO ───────────────────────────────────────────── -->
@@ -25,12 +30,25 @@
     <div class="hero-glow"></div>
     <div class="hero-chip">✦ Instant Resume Generation — No Sign-Up</div>
     <h1>Your resume,<br>crafted <em>instantly.</em></h1>
-    <p>Fill in your details, pick a premium template, and download a<br>polished ATS-ready PDF — entirely in your browser.</p>
+    <p>Fill in your details, pick a premium template, and download a<br>polished ATS-ready PDF — entirely in your
+      browser.</p>
     <div class="hero-stats">
-      <div class="stat"><div class="stat-n">4</div><div class="stat-l">Templates</div></div>
-      <div class="stat"><div class="stat-n">AI</div><div class="stat-l">Smart Content</div></div>
-      <div class="stat"><div class="stat-n">PDF</div><div class="stat-l">Instant Export</div></div>
-      <div class="stat"><div class="stat-n">ATS</div><div class="stat-l">Optimized</div></div>
+      <div class="stat">
+        <div class="stat-n">4</div>
+        <div class="stat-l">Templates</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">AI</div>
+        <div class="stat-l">Smart Content</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">PDF</div>
+        <div class="stat-l">Instant Export</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">ATS</div>
+        <div class="stat-l">Optimized</div>
+      </div>
     </div>
   </section>
 
@@ -112,7 +130,8 @@
     <div class="section-inner">
       <div class="step-tag center">Step 2 — Your Details</div>
       <h2 class="section-title center">Fill In Your Information</h2>
-      <p class="section-sub center mx-auto">Enter your details — our smart engine builds a professional resume instantly.</p>
+      <p class="section-sub center mx-auto">Enter your details — our smart engine builds a professional resume
+        instantly.</p>
 
       <div class="form-grid">
 
@@ -178,7 +197,8 @@
           </div>
           <div class="field">
             <label for="f-bg">Background &amp; Achievements <small>(optional — greatly improves output)</small></label>
-            <textarea id="f-bg" rows="4" placeholder="e.g. Led redesign cutting drop-off 30%. Managed team of 6. Built product 0→50K users…"></textarea>
+            <textarea id="f-bg" rows="4"
+              placeholder="e.g. Led redesign cutting drop-off 30%. Managed team of 6. Built product 0→50K users…"></textarea>
           </div>
           <div class="field">
             <label for="f-edu">Education</label>
@@ -222,15 +242,16 @@
       <!-- Live preview frame -->
       <div id="preview-frame"></div>
 
-      <p class="preview-tip">💡 Click <strong>Download PDF</strong> to save — uses your browser's built-in print engine</p>
+      <p class="preview-tip">💡 Click <strong>Download PDF</strong> to save — uses your browser's built-in print engine
+      </p>
 
     </div>
   </section>
 
   <!-- ── FOOTER ─────────────────────────────────────────── -->
   <footer class="footer">
-    <span>© 2025 ResumeAI · 100% Client-Side</span>
-    <span>Just open <code>index.html</code> in your browser</span>
+    <span> ResumeAI · </span>
+    <span>Just open in your browser</span>
   </footer>
 
   <!-- ── LOADING OVERLAY ────────────────────────────────── -->
@@ -238,7 +259,9 @@
     <div class="ov-icon">✦</div>
     <div class="ov-title" id="ov-title">Building your resume…</div>
     <div class="ov-sub" id="ov-sub">Crafting professional content</div>
-    <div class="ov-bar"><div class="ov-fill"></div></div>
+    <div class="ov-bar">
+      <div class="ov-fill"></div>
+    </div>
   </div>
 
   <!-- ── TOAST ──────────────────────────────────────────── -->
@@ -246,4 +269,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>
