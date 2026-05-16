@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResumeAI — Premium Resume Builder</title>
+  <meta name="description" content="Build a stunning, ATS-optimized resume with our premium builder. Choose from 4 professional templates, fill in your details, and download a polished PDF — all for free, no sign-up required." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      ResumeAI
+      <span class="nav-pro">PRO</span>
+    </div>
+    <span class="nav-hint">100% Client-Side · No API Needed</span>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-chip">✦ Instant Resume Generation — No Sign-Up</div>
+    <h1>Your resume,<br>crafted <em>instantly.</em></h1>
+    <p>Fill in your details, pick a premium template, and download a<br>polished ATS-ready PDF — entirely in your browser.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-n">4</div><div class="stat-l">Templates</div></div>
+      <div class="stat"><div class="stat-n">AI</div><div class="stat-l">Smart Content</div></div>
+      <div class="stat"><div class="stat-n">PDF</div><div class="stat-l">Instant Export</div></div>
+      <div class="stat"><div class="stat-n">ATS</div><div class="stat-l">Optimized</div></div>
+    </div>
+  </section>
+
+  <!-- ── STEP 1 : TEMPLATES ─────────────────────────────── -->
+  <section class="section" id="templates">
+    <div class="section-inner">
+      <div class="step-tag">Step 1 — Choose Template</div>
+      <h2 class="section-title">Pick Your Style</h2>
+      <p class="section-sub">4 premium designs crafted for maximum recruiter impact.</p>
+
+      <div class="template-grid">
+
+        <div class="tpl-card selected" data-tpl="executive" onclick="selectTemplate(this)" id="tpl-executive">
+          <div class="tpl-check">✓</div>
+          <div class="tpl-badge" style="background:linear-gradient(135deg,#7c6af7,#a78bfa);color:#fff;">POPULAR</div>
+          <div class="tpl-swatch exec-swatch">
+            <div class="sw-line" style="width:55%;height:9px;background:rgba(167,139,250,.55);"></div>
+            <div class="sw-line" style="width:36%;height:4px;background:rgba(255,255,255,.22);"></div>
+            <div class="sw-line" style="width:100%;height:3px;background:rgba(120,100,220,.22);"></div>
+            <div class="sw-line" style="width:75%;height:3px;background:rgba(120,100,220,.14);"></div>
+            <div class="sw-line" style="width:55%;height:3px;background:rgba(120,100,220,.08);"></div>
+          </div>
+          <div class="tpl-meta">
+            <div class="tpl-name">Executive Dark</div>
+            <div class="tpl-desc">Corporate · Violet · Sidebar</div>
+          </div>
+        </div>
+
+        <div class="tpl-card" data-tpl="editorial" onclick="selectTemplate(this)" id="tpl-editorial">
+          <div class="tpl-check">✓</div>
+          <div class="tpl-badge" style="background:#111;color:#d4b483;">ELEGANT</div>
+          <div class="tpl-swatch edit-swatch">
+            <div class="sw-line" style="width:66%;height:12px;background:rgba(255,255,255,.88);"></div>
+            <div class="sw-line" style="width:40%;height:4px;background:rgba(255,255,255,.28);"></div>
+          </div>
+          <div class="tpl-meta">
+            <div class="tpl-name">Editorial Black</div>
+            <div class="tpl-desc">Magazine · Skill bars</div>
+          </div>
+        </div>
+
+        <div class="tpl-card" data-tpl="minimal" onclick="selectTemplate(this)" id="tpl-minimal">
+          <div class="tpl-check">✓</div>
+          <div class="tpl-badge" style="background:linear-gradient(135deg,#0f766e,#2dd4bf);color:#fff;">CLEAN</div>
+          <div class="tpl-swatch min-swatch">
+            <div class="sw-line" style="width:53%;height:9px;background:#2dd4bf;opacity:.6;"></div>
+            <div class="sw-line" style="width:33%;height:4px;background:#2dd4bf;opacity:.35;"></div>
+            <div class="sw-line" style="width:100%;height:3px;background:#e0e0e0;"></div>
+            <div class="sw-line" style="width:72%;height:3px;background:#e0e0e0;"></div>
+            <div class="sw-line" style="width:50%;height:3px;background:#e0e0e0;"></div>
+          </div>
+          <div class="tpl-meta">
+            <div class="tpl-name">Minimal Teal</div>
+            <div class="tpl-desc">Clean · Dot skills</div>
+          </div>
+        </div>
+
+        <div class="tpl-card" data-tpl="creative" onclick="selectTemplate(this)" id="tpl-creative">
+          <div class="tpl-check">✓</div>
+          <div class="tpl-badge" style="background:linear-gradient(135deg,#fb7185,#f97316);color:#fff;">BOLD</div>
+          <div class="tpl-swatch cre-swatch">
+            <div class="sw-line" style="width:62%;height:11px;background:rgba(255,255,255,.9);"></div>
+            <div class="sw-line" style="width:38%;height:4px;background:rgba(255,255,255,.45);"></div>
+            <div class="sw-line" style="width:100%;height:3px;background:rgba(255,255,255,.28);"></div>
+            <div class="sw-line" style="width:76%;height:3px;background:rgba(255,255,255,.18);"></div>
+          </div>
+          <div class="tpl-meta">
+            <div class="tpl-name">Bold Creative</div>
+            <div class="tpl-desc">Gradient · Vibrant</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STEP 2 : FORM ──────────────────────────────────── -->
+  <section class="section bg-surface" id="builder">
+    <div class="section-inner">
+      <div class="step-tag center">Step 2 — Your Details</div>
+      <h2 class="section-title center">Fill In Your Information</h2>
+      <p class="section-sub center mx-auto">Enter your details — our smart engine builds a professional resume instantly.</p>
+
+      <div class="form-grid">
+
+        <!-- Personal card -->
+        <div class="form-card">
+          <div class="card-title">
+            <span class="card-bar"></span>Personal Info
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">Full Name *</label>
+              <input id="f-name" type="text" placeholder="Alex Johnson" />
+            </div>
+            <div class="field">
+              <label for="f-title">Target Job Title *</label>
+              <input id="f-title" type="text" placeholder="Senior Product Designer" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-email">Email *</label>
+              <input id="f-email" type="email" placeholder="alex@email.com" />
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" type="text" placeholder="+1 555 000 0000" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-location">City, Country</label>
+              <input id="f-location" type="text" placeholder="San Francisco, CA" />
+            </div>
+            <div class="field">
+              <label for="f-linkedin">LinkedIn / Website</label>
+              <input id="f-linkedin" type="text" placeholder="linkedin.com/in/alex" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-industry">Industry</label>
+            <input id="f-industry" type="text" placeholder="e.g. Fintech, SaaS, Healthcare" />
+          </div>
+        </div>
+
+        <!-- Professional card -->
+        <div class="form-card">
+          <div class="card-title">
+            <span class="card-bar"></span>Professional Background
+          </div>
+          <div class="field">
+            <label for="f-exp">Years of Experience</label>
+            <select id="f-exp">
+              <option value="0-1 years, entry level">0–1 years (Fresher)</option>
+              <option value="2-4 years" selected>2–4 years</option>
+              <option value="5-7 years">5–7 years (Mid-Senior)</option>
+              <option value="8-12 years">8–12 years (Senior)</option>
+              <option value="12+ years, executive level">12+ years (Executive)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-skills">Key Skills <small>(comma-separated)</small></label>
+            <input id="f-skills" type="text" placeholder="Figma, React, User Research, Agile" />
+          </div>
+          <div class="field">
+            <label for="f-bg">Background &amp; Achievements <small>(optional — greatly improves output)</small></label>
+            <textarea id="f-bg" rows="4" placeholder="e.g. Led redesign cutting drop-off 30%. Managed team of 6. Built product 0→50K users…"></textarea>
+          </div>
+          <div class="field">
+            <label for="f-edu">Education</label>
+            <input id="f-edu" type="text" placeholder="B.S. Computer Science, MIT, 2018" />
+          </div>
+        </div>
+
+      </div><!-- /form-grid -->
+
+      <!-- Error box -->
+      <div id="error-box" class="error-box hidden"></div>
+
+      <!-- Generate button -->
+      <div class="gen-wrap">
+        <button id="gen-btn" class="gen-btn" onclick="generate()">
+          <span class="btn-spinner" id="btn-spinner"></span>
+          <span id="btn-label">✦ Generate My Resume</span>
+        </button>
+        <p class="gen-note">🔒 100% private — everything runs in your browser. Nothing is sent anywhere.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── RESULT ──────────────────────────────────────────── -->
+  <section id="result-section" class="section hidden">
+    <div class="section-inner">
+
+      <div class="result-topbar">
+        <div>
+          <div class="step-tag">✓ Resume Ready</div>
+          <h2 class="section-title" style="margin-bottom:0;">Your Generated Resume</h2>
+        </div>
+        <div class="result-actions">
+          <button class="act-btn" onclick="scrollToTemplates()" id="change-tpl-btn">🎨 Change Template</button>
+          <button class="act-btn" onclick="generate()" id="regen-btn">↺ Regenerate</button>
+          <button class="act-btn primary" id="dl-btn" onclick="downloadPDF()">⬇ Download PDF</button>
+        </div>
+      </div>
+
+      <!-- Live preview frame -->
+      <div id="preview-frame"></div>
+
+      <p class="preview-tip">💡 Click <strong>Download PDF</strong> to save — uses your browser's built-in print engine</p>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <span>© 2025 ResumeAI · 100% Client-Side</span>
+    <span>Just open <code>index.html</code> in your browser</span>
+  </footer>
+
+  <!-- ── LOADING OVERLAY ────────────────────────────────── -->
+  <div id="overlay" class="overlay hidden">
+    <div class="ov-icon">✦</div>
+    <div class="ov-title" id="ov-title">Building your resume…</div>
+    <div class="ov-sub" id="ov-sub">Crafting professional content</div>
+    <div class="ov-bar"><div class="ov-fill"></div></div>
+  </div>
+
+  <!-- ── TOAST ──────────────────────────────────────────── -->
+  <div id="toast" class="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
